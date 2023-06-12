@@ -98,5 +98,4 @@ if __name__ == "__main__":
 #    print(prompt)
 #    print("\n\n\n\n\n\n")
     resp = json.loads(gen_response(prompt, temperature=0.0, system_prompt="You are an expert at debugging issues on the command line. You will do ONLY WHAT YOU ARE TOLD"))
-    print(resp)
     pane.send_keys(resp["suggested_command"], enter=False)
